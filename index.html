@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!----------------------- HEAD ------------------>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/36ff1e1224.js"></script>
+    <!-- Google Fonts --> 
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- Bootstrap 4 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- custom css-->    
+        <link rel="stylesheet" type="text/css" href="./stylesheets/main.css">
+
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <title>Peter Tran | Web Developer, Web Designer</title>
+</head><!----------------------- HEAD ------------------>
+<body><!------------------------ BODY ------------------->
+    
+
+    <body>
+        <!-- <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+            <div class="container">
+              <a href="index.html" class="navbar-brand">Peter Tran</a>
+              <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">About</a>
+                    <a class="nav-item nav-link" href="#">Portfolio</a>
+                    <a class="nav-item nav-link" href="#">Contact</a>
+                    <a class="nav-item nav-link" href="#">Additional Info</a>
+                  </div>
+              </div>
+            </div>
+          </nav> -->
+          
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="container">
+              <a class="navbar-brand js-scroll-trigger" href="#page-top">Peter Tran</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+                </li>                         
+                  <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#resume-pg">Resume</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    <!--Heading Img-->
+        <header height="100vh" id="home">
+            <div class="overlay"></div>
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" >
+                <source src="https://player.vimeo.com/external/180171349.sd.mp4?s=442e20c887b24ba49e2125abe83fb0f78774e0fd&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+            </video>
+            <div class="container h-100">
+                <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+                    <h1 class="display-3"><img src='https://petertran.me/assets/logo-4637530a726b5be0174abbdd056dbdffbc4e79f5e55df198205b67d99764e0b3.png'></h1>
+                        <a href="#about" class="no-link" ><button class="btn btn-outline-light" >About Me</button></a>
+                        <a href="https://petertran.tech.blog/blog-feed/" target="_blank" class="no-link" ><button class="btn btn-light" >About Me</button></a>
+
+                </div>
+                </div>
+            </div>
+            </header>        
+            <div class="bg-light" id="about">
+                <div class="row " ><!--First Row-->
+                    <div class="col-md-7 " >
+                        <div class="card  card-height"><!-- Card -->
+                            <div class="view overlay"><!-- Card image -->
+                                <img class="card-img-top  image-size"
+                                    src="./images/me-in-snow.jpg"
+                                   alt="picture of me in the snow">
+                                <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+                            <!-- Card content -->
+                            <div class="card-body ">
+                                <!-- Title -->
+                                <h4 class="lead">Peter Tran: Web Developer</h4>
+                                <!-- Button -->
+                                <a href="#portfolio" class="btn btn-dark" id="portfolio-btn">Porfolio Page</a>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="col-md-5 ">
+                        <div class=" d-flex justify-content-center align-items-center container info-about" style="height: 100%" >Hello my name is Peter and I am a web developer. I spend anytime I can improving and sharpening my technology stack. I love learning new things and cannot picture myself doing anything else. For me it is not just a job, but something I do out of passion. I will always put my all in every project I work on, for I am grateful to be in this field. <br> <br>
+
+                        I changed from a business background to majoring in Web Development. I went to school full time, but felt like I could handle more. As a result, I also attended three coding bootcamps at night. From those three coding bootcamps, I extended my knowledge of Ruby, CSS, JavaScript, Php, Adobe CC, Git amongst other programing technologies. I am a life long student and will alwaysto act like so. For this reason, I am working on my Bachelor's in Computer Science.
+                        </div>
+                    </div>
+                </div><!--End of first row-->
+                <div ></div>
+                <div class="s-1vh" id="portfolio">
+                        <div class="row s-100vh  " id="sortable" >
+                            <div  class="col-md-6 col-sm-6 col-6 box d-flex justify-content-center align-items-center "  >
+                                <section >
+                                    <h2 >Portfolio</h2>
+                                    <a href="#resume-pg"><button class="btn btn-primary btn-block mt-2">Resume</button></a>
+                                    <i class="fas fa-sort z-index-top left-top-pos"></i>
+                                </section> 
+                            </div>
+                            <a href=""  class="col-md-6 col-sm-6 col-6 box d-flex justify-content-center">
+                                <img src="./images/peter-cartoon.png" class="img-box">
+                                <i class="fas fa-sort z-index-top  right-top-pos"></i>
+                            </a>
+                            <a href=""  class="col-md-6 col-sm-6 col-6 box d-flex justify-content-center">
+                                <img src="./images/peter-cartoon.png" class="img-box">
+                                <i class="fas fa-sort z-index-top left-bot-pos "></i>
+                            </a>
+                            <a href=""  class="col-md-6 col-sm-6 col-6 box d-flex justify-content-center">
+                                <img src="./images/peter-cartoon.png" class="img-box">
+                                <i class="fas fa-sort z-index-top right-bot-pos black "></i>
+
+                            </a>
+         
+                        </div>
+                </div><!--end of 100vh div -->
+                <div class="s-100vh"  >
+                    <div class="row" >
+                        <div class="col-md-7 resume-mobile"  >
+                            <img src="./images/resume-1.jpg" alt="resume" class="resume" id="resume-pg"  >
+                        </div>
+                        <div class="col-md-5 mobile-gone">
+                            <div class="resume-side d-flex justify-content-center  align-items-center">
+                        
+                                <blockquote class="blockquote text-center " >
+                                    <p class="mb-0 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                    <br>
+                                    <a href="#contact">
+                                        <button class="btn btn-primary">Contact Form</button>
+                                    </a>
+                                  </blockquote>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="s-100vh container  d-flex justify-content-center  align-items-center pt-5 mt-5">
+                <section  id="contact">
+
+                    <!--Section heading-->
+                    <h2 class=" font-weight-bold text-center my-4">Contact Me</h2>
+                    <!--Section description-->
+                    <p class="text-center w-responsive mx-auto mb-5">I would love to hear from you. Leave a message or a job offering, whatever works! </p>
+
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md ">
+                            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                                <!--Grid row-->
+                                <div class="row">
+
+                                    <!--Grid column-->
+                                    <div class="col-md-6">
+                                        <div class="">
+                                            <input type="text" id="name" name="name" class="form-control">
+                                            <label for="name" class="">Your name</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+
+                                    <!--Grid column-->
+                                    <div class="col-md-6">
+                                        <div class="">
+                                            <input type="text" id="email" name="email" class="form-control">
+                                            <label for="email" class="">Your email</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+
+                                </div>
+                                <!--Grid row-->
+
+                                <!--Grid row-->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="">
+                                            <input type="text" id="subject" name="subject" class="form-control">
+                                            <label for="subject" class="">Subject</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Grid row-->
+
+                                <!--Grid row-->
+                                <div class="row">
+
+                                    <!--Grid column-->
+                                    <div class="col-md-12">
+
+                                        <div class="">
+                                            <textarea type="text" id="message" name="message" rows="5" class="form-control md-textarea"></textarea>
+                                            <label for="message">Your message</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!--Grid row-->
+
+                            </form>
+
+                            <div class="text-center m-2">
+                                <a class="btn btn-primary btn-block" >Send</a>
+                            </div>
+                        </div>
+
+                       
+
+                    </div>
+
+                </section>
+
+
+
+
+
+
+
+              </div><!--ENd of contacct page -->
+
+<a href="#home" class="" id="btn-up"><i class=" d-inline-block fas fa-arrow-up text-dark "></i></a>
+</body><!------------------------ BODY ------------------->
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>    
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+
+    <!-- Popper -->    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap 4-->    
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!--Custom Javascript-->
+        <script src="./javascript/index.js"></script>    
+</html>

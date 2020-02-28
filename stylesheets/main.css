@@ -1,0 +1,216 @@
+
+  /* Gets rid of the  horizontal scrolling  */
+  body  {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 5;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    background-color: black;
+    z-index:1;
+  }
+  
+  /* --------------Nav Section---------------- */
+  .navbar {
+    padding: 0;
+  }
+  .navbar .nav-link {
+    font-size: 10px;
+    text-transform: uppercase;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  .navbar-brand{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: -.5px;
+    padding-top: 4px;
+    font-weight: bold;
+    text-shadow: 1px 3px 2px rgba(0,0,0,0.2);
+    /* gradient in nav-brand */
+    background-image: -webkit-gradient(linear,50% 30%,90% 10%,from(#fff),to(#bdc3c7));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+  
+  .navbar .nav-item.active {
+    border-left: white 1px solid;
+  }
+/* FOr links to not have their default coloring  */
+  .no-link{
+    color: inherit;
+
+  }
+  .no-link:hover{
+    color: inherit;
+
+  }
+.card {
+  border : 0px
+}
+
+.s-100vh {
+  height: 100vh;
+  max-height: 100vh;
+}
+.s-50vh {
+  height: 100vh;
+}
+
+/* ----------------Button back to top ----------- */
+#btn-up{
+  width: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  z-index: 999;
+  cursor: pointer;
+  opacity: 0.7;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  background-color: #DDD;
+  color: #555;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.box {
+  padding: 0;
+  height: 50%;
+}
+
+.img-box {
+  height: 100%;
+  width: 100%;
+}
+
+.z-index-top{
+   z-index: 99 ;
+  }
+
+  .left-bot-pos {
+    position: absolute;
+    top: 10px;
+    left: 95%;
+  }
+
+  .right-bot-pos {
+    position: absolute;
+    top: 10px;
+    right: 95%;
+  }
+
+  .left-top-pos {
+    position: absolute;
+    bottom: 10px;
+    left: 95%;
+  }
+  .right-top-pos {
+    position: absolute;
+    bottom: 10px;
+    right: 95%;
+  }
+  .black {
+    color: black;
+  }
+
+
+  .s-110vh{
+    height: 110vh;
+  }
+
+
+.resume {
+  height: 100%;
+  max-height: 100vh;
+  width: 100%;
+}
+
+.resume-side{
+  height: 100%;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+  body{
+    padding: 1%;
+  }
+
+  #peter-img{
+    height: 100vh;
+  }
+  #portfolio-btn {
+    display: none;
+  }
+
+  .resume-side{
+    display: none;
+  }
+
+  .mobile-gone{
+    display: none;
+  }
+
+ #resume-mobile{
+   min-width: 90%;
+   margin: auto;
+ }
+
+.peter-img {
+  height: 100%;
+}
+
+
+
+
+}
+
+
+@media only screen and (min-width: 1050px) {
+  
+  .img-box {
+    height: 100%;
+    width: 90%;
+    padding: 10px;
+  }
+  .card-height{
+    height: 100vh;
+  }
+}
