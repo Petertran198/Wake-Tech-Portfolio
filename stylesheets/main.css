@@ -113,11 +113,14 @@ header {
 .box {
   padding: 0;
   height: 50%;
+  border-radius: 5px;
 }
+
 
 .img-box {
   height: 100%;
   width: 100%;
+  
 }
 
 .z-index-top{

@@ -1,27 +1,4 @@
-  
-// smooth scrolling effect
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function(e) {
-      e.preventDefault();
-  
-      document.querySelector(this.getAttribute("href")).scrollIntoView({
-        behavior: "smooth"
-      });
-    });
-  });
-
-
-
-
-//Sorting imported for jqueryui
-  $( function() {
-    $( "#sortable" ).sortable();
-    $( "#sortable" ).disableSelection();
-  } );
-
-
-
-
+ 
   //Sliding Navbar 
   (function($) {
     "use strict"; // Start use strict to make it accurate 
@@ -50,3 +27,44 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   
   })(jQuery); // end strict
+  
+  
+// smooth scrolling effect
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+      e.preventDefault();
+  
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth"
+      });
+    });
+  });
+
+
+
+
+//Sorting imported for jqueryui
+  $( function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+  } );
+
+// Selecting the portfolio items and add styling to it 
+$portfolioList = $('#sortable div, #sortable a')
+$selectedPortfolio = {
+  border: "8px solid #25292d",
+  backgroundColor: "#e4e8ec"
+
+}
+ $portfolioList.on("mouseover", function(){
+    $(this).css('border', "8px solid #343a40");
+  })
+
+  $portfolioList.on("mousedown", function(){
+    $(this).css($selectedPortfolio);
+  })
+  $portfolioList.on("mouseup", function(){
+    $(this).css('background', "#f8f9fa");
+  })
+
+
