@@ -53,13 +53,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 $portfolioList = $('#sortable div, #sortable a')
 $selectedPortfolio = {
   border: "8px solid #25292d",
-  backgroundColor: "#e4e8ec"
+  backgroundColor: "#eef1f3"
 
 }
  $portfolioList.on("mouseover", function(){
     $(this).css('border', "8px solid #343a40");
   })
-
+ 
   $portfolioList.on("mousedown", function(){
     $(this).css($selectedPortfolio);
   })
