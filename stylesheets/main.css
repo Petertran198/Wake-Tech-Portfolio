@@ -1,8 +1,8 @@
 
   /* Gets rid of the  horizontal scrolling  */
   body  {
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
 }
 
 header {
@@ -92,6 +92,10 @@ header {
   height: 100vh;
 }
 
+.hero-img{
+  width: 100%;
+  max-width: 500px;
+}
 /* ----------------Button back to top ----------- */
 #btn-up{
   width: 30px;
@@ -120,7 +124,7 @@ header {
 .img-box {
   height: 100%;
   width: 100%;
-  
+  min-height: 370px;
 }
 
 .z-index-top{
@@ -171,6 +175,7 @@ header {
 
 
 
+
 @media only screen and (max-width: 1000px) {
   body{
     padding: 1%;
@@ -206,14 +211,16 @@ header {
 }
 
 
-@media only screen and (min-width: 1050px) {
+@media only screen and (min-width: 1020px) {
   
   .img-box {
     height: 100%;
-    width: 90%;
     padding: 10px;
   }
   .card-height{
     height: 100vh;
   }
+
+
 }
+
