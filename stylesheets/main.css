@@ -124,7 +124,7 @@ header {
 .img-box {
   height: 100%;
   width: 100%;
-  min-height: 370px;
+  height: 370px;
 }
 
 .z-index-top{
